@@ -26,12 +26,12 @@ onMounted(() => {
 
             <div class="row">
                 
-                        <div class="col-sm-5 mb-4 margin-auto my-4 mx-4" v-for="book in books" :key="book.id">
+                        <div class="col-sm-5 col-md-5 sm-4 mb-4 margin-auto my-4 mx-4" style="width:24rem;" v-for="book in books" :key="book.id">
                         <div class="card h-100 shadow-sm">
-                            <div class="card-body flex-column">
+                            <div class="card-body d-flex flex-column">
                                 <h3>{{ book.title }}</h3>
                                 <p>{{ book.body }}</p>
-                                <a href="#" class="btn btn-primary mt-1">Go somewhere</a>
+                                <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
                             </div>
                         </div>
                     </div>
